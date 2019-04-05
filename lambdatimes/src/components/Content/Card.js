@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Card = props => {
-  // console.log(props)
+  console.log(props)
   const {headline, author, img}= props.card
 
   return (
@@ -24,7 +24,7 @@ Card.propTypes= PropTypes.shape({
   author: PropTypes.string,
   headling: PropTypes.string,
   img: PropTypes.string,
-  
+  tab: PropTypes.string
 })
 
 export default Card;
