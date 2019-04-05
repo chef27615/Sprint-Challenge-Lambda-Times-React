@@ -26,15 +26,30 @@ font-size: 60px;
   flex: 8;
   text-align: center;
   color: #000;
-`
 
+`
+const Spans = styled.span`
+align-self: flex-end;
+font-size: 11px;
+font-weight: bold;
+letter-spacing: 1px;
+`
+const DateSpan = styled(Spans)`
+margin-left: 25px;
+  flex: 1;
+`
+const TempSpan =styled(Spans)`
+text-align: right;
+margin-right: 25px;
+flex: 1;
+`
 
 const Header = () => {
   return (
     <HeaderStyle>
-      <span className="date">SMARCH 32, 2018</span>
+      <DateSpan>SMARCH 32, 2018</DateSpan>
       <Hh1>Lambda Times</Hh1>
-      <span className="temp">98°</span>
+      <TempSpan>98°</TempSpan>
     </HeaderStyle>
   )
 }
